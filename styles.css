@@ -1,0 +1,141 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://i.postimg.cc/0QRqLPX9/176094.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header img {
+  width: 150px; /* Adjust the size to fit your logo */
+  margin-bottom: 10px; /* Optional spacing between logo and heading */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+#quiz {
+  margin-bottom: 20px;
+}
+
+/* Styling for quiz questions and options */
+div.question {
+  margin-bottom: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Styling for correct and incorrect feedback */
+.feedback {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.correct {
+  background-color: #b9e6b9;
+  color: #006400;
+}
+
+.incorrect {
+  background-color: #fcbcbc;
+  color: #8b0000;
+}
+
+/* Styling for submit button */
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for category buttons */
+#categories {
+  text-align: center;
+}
+
+.categoryBtn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.categoryBtn:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
